@@ -10,7 +10,14 @@ const ProgressBar = ({ file, setFile }) => {
     }
   }, [url, setFile]);
 
-  return <div className="progress-bar" style={{ width: `${progress}%` }}></div>;
+  return (
+    <div class="progress-wrap">
+      <div
+        className="progress-bar"
+        style={{ width: `${progress}%`, transition: `all 0.8s` }}
+      ></div>
+    </div>
+  );
 };
 
 export default ProgressBar;
