@@ -69,6 +69,7 @@ label:hover {
   height: 5px;
   background: var(--primary);
   margin-top: 20px;
+  border-radius: 5em;
 }
 
 /* image grid styles */
