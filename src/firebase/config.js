@@ -2,14 +2,15 @@ import firebase from "firebase/app";
 import "firebase/storage";
 import "firebase/firestore";
 
+require("dotenv").config();
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyAovNXRAFhT6q0-QZIe-Cj7QOfSAU8ezpA",
+  apiKey: "FIREBASE_API_KEY",
   authDomain: "aryan-firegram.firebaseapp.com",
   projectId: "aryan-firegram",
   storageBucket: "aryan-firegram.appspot.com",
-  messagingSenderId: "422508638550",
-  appId: "1:422508638550:web:1f9d3d0d75833db29da6f7",
+  messagingSenderId: "FIREBASE_SENDER_ID",
+  appId: "FIREBASE_APP_ID",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
